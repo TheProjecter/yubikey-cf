@@ -1,0 +1,9 @@
+TODO:
+	
+* Add HMAC-SHA-1 support for signing
+* Add nonce to request
+* Add additional request fields
+	timestamp
+	sl
+	timeout
+* Test against 3rd party API servers

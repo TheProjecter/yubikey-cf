@@ -1,0 +1,45 @@
+YubiKey Web Services API Client
+==========================================================================
+
+Author:		rdudley robert@xset.co.uk
+Created:	12/22/2010
+
+Version:	0.0.2
+Updated:	12/22/2010
+
+==========================================================================
+
+Implements the YubiCo OTP Validation Protocol as outlined at
+http://code.google.com/p/yubikey-val-server-php/wiki/ValidationProtocolV20
+
+Sends a One Time Password (OTP) via HTTP get to the YubiCo API
+server and returns a struct based on the response.
+
+Usage
+--------------------------------------------------------------------------
+
+Component must by instantiated with the init() Method
+
+<cfset yubicoObj = createObject("Component","yubicoAuthClient").init() />
+
+Calls can then be made to the authenticate method passing in an OTP as a 
+single argument
+
+<cfset retVal = yubicoObj.authenticate(yubiKeyOTP) />
+
+Config
+--------------------------------------------------------------------------
+
+At the moment 2 values can be passed into the object at init()
+
+yubiCoURL - the URL to use for authentication
+clientId - the YubiCo Client ID to pass to the web service
+
+Support
+--------------------------------------------------------------------------
+
+This software is provided as is but limited support will be made available 
+through the forums
+
+Support by email will *not* be provided without prior arrangement
+
